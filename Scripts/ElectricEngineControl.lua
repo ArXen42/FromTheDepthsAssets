@@ -10,6 +10,8 @@ BATTERY_GENERATION           = PUT_YOUR_NUMBER_HERE -- Battery generation of you
 -- For example, useful for maximizing LAMS power agains first, most dangerous, missile swarms at the beginning of the battle
 ACCEPTABLE_BATTERY_FRACTION  = 0.8
 
+------------------------------------------------------------------------------------------------------------------------
+
 ELECTRIC_ENGINE              = 35   -- ID of electric engine component
 NEEDED_POWER_OUTPUT_OVERHEAD = 0.005 -- Min needed output addition to end up with small amount of spare power
 
@@ -63,19 +65,12 @@ function Update(I)
 end
 
 function GetBatteryCapacity(I)
+	-- TODO: autoate
 	return BATTERY_CAPACITY
-	-- local capacity = 0
-
-	-- for pair in BATTERY_BLOCKS do
-	-- for i = 1, I:Component_GetCount(pair.id) do
-	-- capacity += I:Component_GetFloatLogic(pair.id, i, BATTERY_LEVEL_LOGIC)
-	-- end
-	-- end
-
-	-- return capacity
 end
 
 function GetBatteryGeneration(I)
+	-- TODO: automate
 	return BATTERY_GENERATION
 end
 
