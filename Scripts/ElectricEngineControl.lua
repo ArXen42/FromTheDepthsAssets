@@ -50,7 +50,8 @@ function Update(I)
 		-- No restrictions for battery draw
 		balancedOutputLevel = 1
 	else
-		balancedOutputLevel = GetBalancedOutputLevel(batteryCharge, batteryGeneration)
+		-- Try to keep battery charge at acceptable level
+		balancedOutputLevel = GetBalancedOutputLevel(acceptableBatteryCharge, batteryGeneration)
 	end
 
 	local newPowerOutput = math.min(balancedOutputLevel, neededOutput)
