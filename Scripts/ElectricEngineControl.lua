@@ -3,8 +3,8 @@ UPDATE_INTERVAL              = 10
 -- I currently cannot find any means to automatically calculate vehicle battery capacity and battery generation
 -- (can't even enumerate RTG's and batteries), so you have to enter these values manually here
 
-BATTERY_CAPACITY             = 309000 -- Battery capacity of your ship
-BATTERY_GENERATION           = 6400   -- Battery generation of your ship
+BATTERY_CAPACITY             = PUT_YOUR_NUMBER_HERE -- Battery capacity of your ship
+BATTERY_GENERATION           = PUT_YOUR_NUMBER_HERE -- Battery generation of your ship
 
 -- The level to which we can drain battery before limiting throttle to prevent battery stall.
 -- For example, useful for maximizing LAMS power agains first, most dangerous, missile swarms at the beginning of the battle
