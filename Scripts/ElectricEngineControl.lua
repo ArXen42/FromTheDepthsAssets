@@ -1,6 +1,6 @@
-UPDATE_INTERVAL              = 10
+UPDATE_INTERVAL              = 10  -- Update every %number% frame
 
--- I currently cannot find any means to automatically calculate vehicle battery capacity and battery generation
+-- Currently, I cannot find any means to automatically calculate vehicle battery capacity and battery generation
 -- (can't even enumerate RTG's and batteries), so you have to enter these values manually here
 
 BATTERY_CAPACITY             = PUT_YOUR_NUMBER_HERE -- Battery capacity of your ship
